@@ -10,8 +10,8 @@ namespace CsvHelper.Model
     {
         public static ObservableCollection<DicModel> ProcessDic()
         {
-            string fNameDicPath = @"E:\CSharplearn\FileHelperTest\FileHelper7\FileHelper7\Dics\FileNameDictionary.csv";
-            string idDicPath = @"E:\CSharplearn\FileHelperTest\FileHelper7\FileHelper7\Dics\IdDictionary.csv";
+            string fNameDicPath = @"Data\FileNameDictionary.csv";
+            string idDicPath = @"Data\IdDictionary.csv";
             string[] fNameDicData = File.ReadAllLines(fNameDicPath);
             string[] idDicData = File.ReadAllLines(idDicPath);
             ObservableCollection<DicModel> dics = new ObservableCollection<DicModel>();
@@ -22,8 +22,8 @@ namespace CsvHelper.Model
         }
         public static ObservableCollection<ObservableCollection<AttrModel>> ProcessAttr()
         {
-            string attrDicPath = @"E:\CSharplearn\FileHelperTest\FileHelper7\FileHelper7\Dics\AttributeDictionary.csv";
-            string deValueDicPath = @"E:\CSharplearn\FileHelperTest\FileHelper7\FileHelper7\Dics\DefaultDictionary.csv";
+            string attrDicPath = @"Data\AttributeDictionary.csv";
+            string deValueDicPath = @"Data\DefaultDictionary.csv";
             string[] attrDicData = File.ReadAllLines(attrDicPath);
             string[] deValueDicData = File.ReadAllLines(deValueDicPath);
             // Every dic's line should be a collection,and should have a bundle to contain these collections.So here I used doulbe layers of collection.
