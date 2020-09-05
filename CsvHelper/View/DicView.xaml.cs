@@ -91,5 +91,13 @@ namespace CsvHelper.View
                 }
             }
         }
+
+        private void AttrDataGrid_PreviewMouseWheel(object sender, MouseWheelEventArgs e)
+        {
+            var evertArg = new MouseWheelEventArgs(e.MouseDevice, e.Timestamp, e.Delta);
+            evertArg.RoutedEvent = UIElement.MouseWheelEvent;
+            evertArg.Source = sender;
+            AttrDataGrid.RaiseEvent(evertArg);
+        }
     }
 }

@@ -122,10 +122,6 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <None Include="Model\AttributeDictionary.csv" />
-    <None Include="Model\DefaultDictionary.csv" />
-    <None Include="Model\FileNameDictionary.csv" />
-    <None Include="Model\IdDictionary.csv" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
